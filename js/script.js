@@ -1,4 +1,20 @@
 $(function() {
+  // Swiper
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+
+  //アコーデオンメニュー
+  jQuery('.accordion__head').click(function() {
+    jQuery(this).next().slideToggle();
+    jQuery(this).children('.accordion__icon').toggleClass('is-open');
+  });
+
   // drawer.js
   $( '.drawer' ).drawer()
 
