@@ -461,14 +461,86 @@ img {
 ============================================================= */
 .faqs {
   background: url(../img/qa-bg.png) no-repeat center center/cover;
+  padding-bottom: 120px;
 }
 
 .faq-title {
   padding: 60px 0;
 }
 
-.qa-content {
-  margin-left: 0;
+.qa__item {
+  max-width: 612px;
+  width: 100%;
+  margin-left: auto;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.qa__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.accordion-inner {
+  background-color: #3B69FF;
+  color: #fff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 16px;
+}
+
+.accordion__head {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.accordion__body {
+  padding: 0 16px 16px;
+  display: none;
+}
+
+.accordion__body-in {
+  background: #3B69FF33;
+  padding: 16px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.accordion__icon {
+  width: 17px;
+  height: 17px;
+  background: transparent url(../img/minus.png) no-repeat center center/contain;
+  position: absolute;
+  right: 56px;
+}
+
+.accordion__icon.is-open {
+  background-image: url(../img/plus.png);
 }
 
 /*==============================================================
