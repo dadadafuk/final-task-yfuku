@@ -7,6 +7,12 @@ $(function() {
       el: '.swiper-pagination',
       clickable: true,
     },
+
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    }
   });
 
   //アコーデオンメニュー
